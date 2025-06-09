@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Restaurant</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+  <nav>
+    <a href="index.html"><img src="images/logo.png" alt="Restaurant Logo" class="logo" /></a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/banner.jpg" alt="Restaurant Banner" />
+    <h1>Welcome to Hunter Pizzaria</h1>
+  </section>
+
+  <!-- Gallery Slider -->
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="slider">
+      <img src="images/photo1.jpg" class="slide active" alt="Food 1" />
+      <img src="images/photo2.jpg" class="slide" alt="Food 2" />
+      <img src="images/photo3.jpg" class="slide" alt="Food 3" />
+      <img src="images/photo4.jpg" class="slide" alt="Interior 1" />
+      <img src="images/photo5.png" class="slide" alt="Interior 2" />
+      <img src="images/photo6.jpeg" class="slide" alt="Interior 3" />
+    </div>
+    <button onclick="prevSlide()">Prev</button>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Our restaurant was founded in 2005 with a passion for homemade dishes and warm hospitality. Our mission is to bring joy through food to every customer who walks through our door.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    <p>Hours: Mon-Sat: 11am - 10pm, Sun: Closed</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

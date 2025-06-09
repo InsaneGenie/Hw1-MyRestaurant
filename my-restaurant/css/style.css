@@ -1,0 +1,263 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fffaf0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #8b0000;
+  padding: 1em 2em;
+  color: white;
+  position: relative;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1000;
+}
+
+nav .logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Hamburger (hidden by default) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  z-index: 0;
+  position: relative;
+  filter: brightness(70%);
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+}
+
+/* Menu Section */
+.menu {
+  padding: 2em;
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 1em;
+}
+
+.menu-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 0.5em;
+}
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff8dc;
+  padding: 1em;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: #8b0000;
+}
+
+/* Gallery */
+.gallery {
+  padding: 2em;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.slide {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.gallery button {
+  margin: 1em 0.5em;
+  padding: 0.5em 1.5em;
+  border: none;
+  background-color: #8b0000;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.gallery button:hover {
+  background-color: #a52a2a;
+}
+
+/* About */
+.about {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Contact */
+.contact {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-bottom: 1em;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 0.7em;
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #a52a2a;
+}
+
+/* Footer */
+footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #8b0000;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+}

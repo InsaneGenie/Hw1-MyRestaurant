@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+  <nav>
+    <a href="index.html"><img src="images/logo.png" alt="Restaurant Logo" class="logo" /></a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <section class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="card">
+        <h3>Margherita Pizza</h3>
+        <p>$10.99</p>
+        <img src="images/photo1.jpg" class="menu-img" alt="Margherita Pizza" />
+      </div>
+      <div class="card">
+        <h3>Spaghetti Bolognese</h3>
+        <p>$12.99</p>
+        <img src="images/photo2.jpg" class="menu-img" alt="Spaghetti Bolognese" />
+      </div>
+      <div class="card">
+        <h3>Caesar Salad</h3>
+        <p>$8.99</p>
+        <img src="images/photo3.jpg" class="menu-img" alt="Caesar Salad" />
+      </div>
+      <!-- Add more items -->
+    </div>
+  </section>
+
+  <footer>
+    <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    <p>Hours: Mon-Sat: 11am - 10pm, Sun: Closed</p>
+  </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
